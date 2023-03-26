@@ -11,7 +11,7 @@ export class Home extends Component {
   
   render() {
     return (		
-      <img src={home} className="homeImage" alt="home"/>        
+      <img src={home} className="homeImage" alt="home" style={{width:'75%',height:'75%'}}/>        
     );
   }
 }
