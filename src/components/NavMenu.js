@@ -58,8 +58,8 @@ export class NavMenu extends Component {
           <Navbar color="white" light expand="md">
             <NavbarBrand href="/">R O A M</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} />                                              
-            <Collapse isOpen={!this.state.collapsed} navbar>
-              <Nav className="mr-auto" navbar>    
+		    {/*<Collapse isOpen={!this.state.collapsed} navbar>*/}
+              <Nav className="mx-auto" navbar>    
 			    <NavLink tag={Link} to="/">Home</NavLink>
                 <NavItem>	
 				{/*{login}*/}	                  
@@ -68,7 +68,7 @@ export class NavMenu extends Component {
 				<NavLink tag={Link} to="/contact">Contact Us</NavLink>
 				<NavLink tag={Link} to="/">Whatever</NavLink>
               </Nav>
-            </Collapse>          
+		    {/*</Collapse>*/}
           </Navbar>		  		 		 
 		</div>
       </header>
