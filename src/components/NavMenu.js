@@ -60,11 +60,8 @@ export class NavMenu extends Component {
             {/*<NavbarToggler onClick={this.toggleNavbar} />   */}                                           
 		    {/*<Collapse isOpen={!this.state.collapsed} navbar>*/}
               <Nav className="mx-auto" navbar>    
-			    <NavLink tag={Link} to="/">Home</NavLink>
-                <NavItem>	
-				{/*{login}*/}	                  
-		        </NavItem>
-				&nbsp;&nbsp;
+			    <NavLink tag={Link} to="/">Home</NavLink>                
+				{/*{login}*/}	                  		        
 				<NavLink tag={Link} to="/contact">Contact Us</NavLink>
 				<NavLink tag={Link} to="/">Whatever</NavLink>
               </Nav>
