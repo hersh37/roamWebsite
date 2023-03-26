@@ -57,7 +57,7 @@ export class NavMenu extends Component {
         <div style={{display:'block', width:550, padding:30}}>		  
           <Navbar color="white" light expand="md">
             <NavbarBrand href="/">R O A M</NavbarBrand>
-            <NavbarToggler onClick={this.toggleNavbar} />                                              
+            {/*<NavbarToggler onClick={this.toggleNavbar} />   */}                                           
 		    {/*<Collapse isOpen={!this.state.collapsed} navbar>*/}
               <Nav className="mx-auto" navbar>    
 			    <NavLink tag={Link} to="/">Home</NavLink>
