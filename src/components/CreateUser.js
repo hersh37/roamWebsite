@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../res/custom.css'
+import '../res/style.css'
 
 export class CreateUser extends Component {
   static displayName = CreateUser.name;  

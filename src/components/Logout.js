@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navigate } from 'react-router-dom';
-import '../res/custom.css'
+import '../res/style.css'
 
 export class Logout extends Component {
   static displayName = Logout.name;

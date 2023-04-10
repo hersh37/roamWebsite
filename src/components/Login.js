@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
-import '../res/custom.css'
+import '../res/style.css'
 
 export class Login extends Component {
   static displayName = Login.name;    
@@ -79,7 +79,7 @@ export class Login extends Component {
 		  <p/>
           <button type="submit" className="btn btn-primary">Submit</button>
           <p />or
-          <p /><Link to={{ pathname: "/createuser" }} style={{textDecoration:'none'}}>Create new user</Link>          
+          <p /><Link to={{ pathname:"/createuser" }}>Create new user</Link>          
         </form><p/>
         {this.renderLogin()}
       </div>

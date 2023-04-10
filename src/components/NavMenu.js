@@ -53,21 +53,13 @@ export class NavMenu extends Component {
         {add}{catalog}</> : "";
 	
     return (
-      <header>
-        <div style={{display:'block', width:550, padding:30}}>		  
-          <Navbar color="white" light expand="md">
-            <NavbarBrand href="/">R O A M</NavbarBrand>
-            {/*<NavbarToggler onClick={this.toggleNavbar} />   */}                                           
-		    {/*<Collapse isOpen={!this.state.collapsed} navbar>*/}
-              <Nav className="mx-auto" navbar>    
-			    <NavLink tag={Link} to="/">Home</NavLink>                
-				{/*{login}*/}	                  		        
-				<NavLink tag={Link} to="/contact">Contact Us</NavLink>
-				<NavLink tag={Link} to="/">Whatever</NavLink>
-              </Nav>
-		    {/*</Collapse>*/}
-          </Navbar>		  		 		 
-		</div>
+      <header>	  	  
+        <ul>
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/">Contact Us</a></li>
+		  <li><a href="/">Whatever</a></li>
+		  <li id="bars"><a href="/">Bars</a></li>          
+		</ul>						
       </header>
     );
   }

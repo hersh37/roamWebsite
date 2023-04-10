@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../res/custom.css'
+import '../res/style.css'
 
 export class Contact extends Component {
   static displayName = Contact.name;    
@@ -67,7 +67,7 @@ export class Contact extends Component {
 		  <p/>
 		  <div className="form-group">
             <label asp-for="Message" style={{width:'200px'}}>How can we help you?</label><br/>
-			<textarea name="Message" className="form-control textarea" value={this.state.message} onChange={this.handleChangeMessage}></textarea>            
+			<textarea name="Message" className="form-control form-textarea" value={this.state.message} onChange={this.handleChangeMessage}></textarea>            
           </div>
 		  <p/>		  
           <button type="submit" className="btn btn-primary">Submit</button>                          	

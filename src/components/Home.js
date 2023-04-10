@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import home from '../res/roam-new.jpg';
-import '../res/custom.css';
+import home from '../res/logo.jpg';
+import forest from '../res/forest.mp4';
+import '../res/style.css';
 
 export class Home extends Component {
   static displayName = Home.name;  
@@ -10,8 +11,12 @@ export class Home extends Component {
   }
   
   render() {
-    return (		
-      <img src={home} className="homeImage" alt="home" style={{width:'75%',height:'75%'}}/>        
+    return (
+      <div id="videoContainer">
+	  <video autoPlay muted loop>
+          <source src={forest} type="video/mp4"/>
+	  </video>        
+      </div>
     );
   }
 }
